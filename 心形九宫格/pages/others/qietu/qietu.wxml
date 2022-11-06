@@ -1,0 +1,30 @@
+<import src="../cropper/we-cropper.wxml"></import>
+<view class="container">
+    <view class="main">
+        <cover-view class="cropper-wrapper mask-image">
+            <template is="we-cropper" data="{{...cropperOpt}}"></template>
+        </cover-view>
+        <view class="title top">
+            <text class="red">注意：</text>滑动图片可以选择区域。
+        </view>
+        <!-- <view class="option_zone">
+            <view class="title">
+                <text>形状选项</text>
+            </view>
+            <scroll-view class="options" scrollX="true">
+                <view bindtap="{{item.bindTap}}" class="option {{selectIndex==index?'active':''}}" id="{{index}}" wx:for="{{optionList}}" wx:key="index">
+                    <image class="tag_icon" src="{{item.icon}}"></image>
+                </view>
+            </scroll-view>
+        </view> -->
+        <view class="cropper-buttons">
+            <button bindtap="uploadOptionTap" class="btn upload_btn upload" style="float: left;">
+                更换图片
+            </button>
+            <button bindtap="getCropperImage" class="btn sure_btn" style="float: right;">
+                保存所有图片
+            </button>
+        </view>
+    </view>
+    <canvas canvasId="canvasForCut" class="canvas_for_cut"></canvas>
+</view>

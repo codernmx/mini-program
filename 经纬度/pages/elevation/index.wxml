@@ -1,0 +1,9 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="container">
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" show-scale show-compass scale="12" show-location enable-satellite class='map'></map>
+    <view class="goHomeBox">
+        <image src="../../assets/img/goHome.png" class="goHome" bindtap="goHome"></image>
+    </view>
+</view>
+<view class="center top">经度：{{tools.toFixed(longitude,4)}}，纬度：{{tools.toFixed(latitude,4)}}</view>
+<view class="center alt top">{{tools.toFixed(addresInfo.altitude,2)}}米</view>

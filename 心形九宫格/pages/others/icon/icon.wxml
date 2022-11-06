@@ -1,0 +1,16 @@
+<import src="../cropper/we-cropper.wxml"></import>
+<view class="container">
+    <view class="main">
+        <cover-view class="cropper-wrapper mask-image">
+            <template is="we-cropper" data="{{...cropperOpt}}"></template>
+        </cover-view>
+        <view class="cropper-buttons" style="margin: 40rpx;">
+            <button bindtap="uploadOptionTap" class="btn upload_btn upload" style="float: left;width: 45%;">
+                更换图片
+            </button>
+            <button bindtap="getCropperImage" class="btn sure_btn" style="float: right;;width: 45%;">
+                确认使用
+            </button>
+        </view>
+    </view>
+</view>

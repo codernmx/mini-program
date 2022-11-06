@@ -1,0 +1,62 @@
+﻿<view class="body container">
+    <navigator appId="wxc82cd178c3a6a4be" class="btn" openType="navigate" target="miniProgram" version="trial">
+        <view class="boxs">
+            <view class="boxs-body">
+                <image class="boxs-image" src="/static/images/home/elm.png"></image>
+                <view class="info">
+                    <view class="title-icon">
+                        <view class="boxs-title">外卖点餐领券</view>
+                        <view class="lable">
+                            <view class="hot-title">8.3万</view>
+                            <view>
+                                <image class="hot" src="/static/images/home/hot.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="boxs-info">饿了么外卖优惠券,美团外卖红包优惠券</view>
+                </view>
+            </view>
+        </view>
+    </navigator>
+    <navigator appId="wx45343caee44e70b1" class="btn" openType="navigate" target="miniProgram" version="trial">
+        <view class="boxs">
+            <view class="boxs-body">
+                <image class="boxs-image" src="/static/images/home/lianai.png"></image>
+                <view class="info">
+                    <view class="title-icon">
+                        <view class="boxs-title">阿Q恋爱话术</view>
+                        <view class="lable">
+                            <view class="hot-title">37.3万</view>
+                            <view>
+                                <image class="hot" src="/static/images/home/hot.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="boxs-info">恋爱聊天话术AI，智能聊天参考，高情商聊天，撩妹话术。</view>
+                </view>
+            </view>
+        </view>
+    </navigator>
+    <navigator appId="wx0dc7219093ff055d" class="btn" openType="navigate" target="miniProgram" version="trial">
+        <view class="boxs">
+            <view class="boxs-body">
+                <image class="boxs-image" src="/static/images/home/choujiang.png"></image>
+                <view class="info">
+                    <view class="title-icon">
+                        <view class="boxs-title">抽奖夺宝</view>
+                        <view class="lable">
+                            <view class="hot-title">68.3万</view>
+                            <view>
+                                <image class="hot" src="/static/images/home/hot.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="boxs-info">免费抽奖夺宝，0元砍价，盲盒，大转盘抽签，集卡拿好礼！</view>
+                </view>
+            </view>
+        </view>
+    </navigator>
+    <view class="boxs ad">
+        <ad adIntervals="30" unitId="adunit-550e67708e7b8766"></ad>
+    </view>
+</view>

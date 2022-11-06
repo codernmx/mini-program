@@ -1,0 +1,23 @@
+<view class="page">
+    <view class="item">品种名称：
+        <view>{{item.typename}}</view>
+    </view>
+    <view class="item">品种代号：<view>{{item.type}}</view>
+    </view>
+    <view class="item">最新价：<view>{{item.price}}</view>
+    </view>
+    <view class="item">开盘价：<view>{{item.openingprice}}</view>
+    </view>
+    <view class="item">最低价：<view>{{item.minprice}}</view>
+    </view>
+    <view class="item">最高价：<view>{{item.maxprice}}</view>
+    </view>
+    <view class="item">涨跌幅：<view>{{item.changepercent?item.changepercent + '%':''}}</view>
+    </view>
+    <view class="item">昨收盘价：<view>{{item.lastclosingprice}}</view>
+    </view>
+    <view class="item">总成交量：<view>{{item.tradeamount}}</view>
+    </view>
+    <view class="item">更新时间：<view>{{item.updatetime}}</view>
+    </view>
+</view>

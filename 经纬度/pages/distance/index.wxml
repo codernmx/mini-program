@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="box flex" bindtap="start">
+        <view>起点位置：{{startInfo.name}}</view>
+        <image src="../../assets/img/choose.png" class="chooseImg"></image>
+    </view>
+    <view class="box flex" bindtap="end">
+        <view>终点位置：{{endInfo.name}}</view>
+        <image src="../../assets/img/choose.png" class="chooseImg"></image>
+    </view>
+    <button type="primary" bindtap="checkDistance" class="top">查询距离</button>
+    <view class="top box flex left">直线距离：<text class="red">{{distance}}米</text></view>
+</view>

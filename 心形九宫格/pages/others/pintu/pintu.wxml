@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="main">
+        <view class="cropper-wrapper">
+            <movable-area class="img_list">
+                <view class="image-choose-container">
+                    <view bindlongpress="{{item.def?'onLongPress':'onLongPress'}}" bindtap="onPlusTap" bindtouchend="handleTouchEnd" catchtouchmove="handleTouchMove" class="item {{currentIndex==index?'touch':''}}" data-def="{{item.def}}" data-index="{{index}}" data-url="{{item.src||'https://bt.nmxgzs.cn/upload/2022-06-30/AEKim4.png'}}" id="{{index}}" style="width: {{(680-2*sudokuLineWidth)/3}}rpx; height: {{(680-2*sudokuLineWidth)/3}}rpx; margin: 0 {{(index+1)%3==0?0:sudokuLineWidth}}rpx {{sudokuLineWidth}}rpx 0;" wx:for="{{images}}" wx:key="item">
+                        <image class="def" src="{{plusImage}}" style="margin: {{( (680-2*sudokuLineWidth)/3-120 )/2}}rpx auto;" wx:if="{{item.def}}"></image>
+                        <image class="normal" mode="aspectFill" src="{{item.src}}" wx:else></image>
+                    </view>
+                </view>
+                <movable-view class="movable-view" damping="{{5000}}" direction="all" friction="{{1}}" hidden="{{hidden}}" x="{{x}}" y="{{y}}">
+                    <image class="{{currentDef?'def':'normal'}}" mode="aspectFill" src="{{currentImg}}" wx:if="{{currentImg.length>0}}"></image>
+                </movable-view>
+            </movable-area>
+        </view>
+        <view class="option_zone">
+            <view class="title">
+                <text>线条选项</text>
+            </view>
+            <scroll-view class="options" scrollX="true">
+                <view bindtap="{{item.bindTap}}" class="option {{selectIndex==index?'active':''}}" id="{{index}}" wx:for="{{optionList}}" wx:key="index">
+                    <view class="tag_icon">
+                        <view class="line vert ln_1" style="height: 100%; width: {{item.border}}rpx; top: 0; left: {{(80-2*item.border)/3}}rpx;"></view>
+                        <view class="line vert ln_1" style="height: 100%; width: {{item.border}}rpx; top: 0; left: {{2*(80-2*item.border)/3+item.border}}rpx;"></view>
+                        <view class="line ln_1" style="width: 100%; height: {{item.border}}rpx; left: 0; top: {{(80-2*item.border)/3}}rpx;"></view>
+                        <view class="line ln_1" style="width: 100%; height: {{item.border}}rpx; left: 0; top: {{2*(80-2*item.border)/3+item.border}}rpx;"></view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="cropper-buttons" style="margin: 40rpx;">
+            <button bindtap="onOneKeyUploadTap" class="btn upload_btn upload" style="float: left;">
+                一键上传
+            </button>
+            <button bindtap="getCropperImage" class="btn sure_btn" style="float: right;">
+                保存所有图片
+            </button>
+        </view>
+    </view>
+    <view class="hide_canvas">
+        <canvas canvasId="imageCanvas" id="imageCanvas" style="width:{{canvasWidth}}px; height:{{canvasWidth}}px; background-color: #fff; display: block;"></canvas>
+    </view>
+    <canvas canvasId="canvasForCut" class="canvas_for_cut"></canvas>
+</view>

@@ -1,0 +1,11 @@
+<view>
+    <canvas bindtouchend="onTouchEnd" bindtouchmove="onTouchMove" bindtouchstart="onTouchStart" canvasId="fingerCanvas" disableScroll="{{true}}" style="width: {{windowWidth}}px; height: {{windowHeight}}px;">
+        <cover-view catchtap="onBack" class="back-img {{isIpx?'ipx':''}}">
+            <cover-image src="/images/drink/back.png"></cover-image>
+        </cover-view>
+        <cover-image class="finger finger1 {{entering?'enter':''}}" src="/images/drink/p1.png"></cover-image>
+        <cover-image class="finger finger2 {{entering?'enter':''}}" src="/images/drink/p2.png"></cover-image>
+        <cover-image class="finger finger3 {{entering?'enter':''}}" src="/images/drink/p3.png"></cover-image>
+        <cover-image class="finger finger4 {{entering?'enter':''}}" src="/images/drink/p4.png"></cover-image>
+    </canvas>
+</view>

@@ -1,0 +1,10 @@
+<view id="container">
+        <view class="ewm">
+                <canvas style="width: 600rpx; height: 600rpx;" canvas-id="myQrcode" bindtap="previewImg"></canvas>
+        </view>
+        <input class="inpt" bindinput="ewmText" value="{{text}}"></input>
+        <button bindtap="searchFn" class="btn" type="primary">生成二维码</button>
+        <button bindtap="save" class="btn top" type="primary">保存二维码</button>
+</view>
+<!-- 分享 -->
+<button open-type="share" class="share" type="primary">推荐给朋友</button>

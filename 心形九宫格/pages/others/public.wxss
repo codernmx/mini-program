@@ -1,0 +1,153 @@
+.container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 200rpx 0;
+        box-sizing: border-box;
+}
+
+button::after {
+        border: none;
+}
+
+button {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: inherit;
+        border-radius: 0;
+        font-size: unset;
+        color: unset;
+}
+
+.btn {
+        width: 390rpx;
+        border-radius: 40rpx;
+        line-height: 78rpx;
+        font-size: 32rpx;
+        font-weight: 600;
+}
+
+.upload_btn {
+        width: 250rpx;
+}
+
+.canvas_for_cut {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+        position: fixed;
+        top: -5000px;
+        left: -2000px;
+}
+
+.bottom-tab {
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        font-size: 30rpx;
+        width: 750rpx;
+        overflow: hidden;
+        box-sizing: border-box;
+        color: #ffffff;
+        text-align: center;
+        box-shadow: 0rpx -4rpx 10rpx #f6f6f6;
+}
+
+.tabBtn {
+        width: 50%;
+        height: 100rpx;
+        line-height: 100rpx;
+        text-align: center;
+        float: left;
+}
+.cropper-buttons{
+        display: flex;
+}
+.nav_icon1,
+.nav_icon2 {
+        background-repeat: no-repeat;
+        background-position: 46px 12px;
+        background-size: 50rpx;
+}
+
+.texttitle {
+        font-size: 34rpx;
+        color: #f8f8f8;
+        padding-left: 26rpx;
+        line-height: 100rpx;
+}
+
+.tabBtn:nth-child(1) {
+        background-color: #FC8E94;
+}
+
+.tabBtn:nth-child(2) {
+        background-color: #f8678d;
+}
+
+.tabBtn:active,
+.select-image-hover {
+        background-color: #FC8E94;
+}
+
+.tabs {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        z-index: 100;
+}
+
+.tab_camera {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 49px;
+        padding-top: 2px;
+}
+
+.tab_camera .camera_bd {
+        position: fixed;
+        z-index: 999;
+        width: 108rpx;
+        height: 108rpx;
+        border-radius: 50%;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #dedede;
+}
+
+.tab_camera image {
+        width: 96rpx;
+        height: 96rpx;
+}
+
+.clear-button {
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        padding: 0;
+        line-height: normal;
+}
+
+.clear-button::after {
+        border: none;
+        color: #000000;
+}
+
+.clear-button:hover {
+        border: none;
+        color: #000000;
+}

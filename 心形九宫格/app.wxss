@@ -1,0 +1,70 @@
+page {
+    background-color: #F8F8F8;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+/* .page-body {
+    padding: 20rpx 0;
+} */
+
+.page-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.btn-area {
+    margin-top: 60rpx;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 30rpx;
+}
+
+/* .canvas{
+  display: none;
+} */
+
+.top {
+    margin-top: 30rpx;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page {
+    padding: 30rpx;
+}
+
+.center {
+    text-align: center;
+}
+
+.tip {
+    font-size: 28rpx;
+    color: gray;
+}
+
+.red {
+    color: red;
+}
+
+.share {
+    font-size: 28rpx;
+    color: #fff;
+    background: #07C160;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 300rpx;
+    width: 200rpx !important;
+    padding: 10rpx 20rpx;
+    border-right: none;
+    border-top-left-radius: 40rpx;
+    border-bottom-left-radius: 40rpx;
+    z-index: 50;
+}

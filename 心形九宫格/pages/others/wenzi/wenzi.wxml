@@ -1,0 +1,41 @@
+<view class="container" style="min-height: {{windowHeight+tabBarHeight}}rpx;">
+    <view class="main">
+        <view class="cropper-wrapper">
+            <view class="img_list">
+                <view bindtap="onPlusTap" class="item" data-index="{{index}}" id="{{index}}" style="background: {{wordBackground}};" wx:for="{{words}}" wx:key="item">
+                    <text class="word" style="color: {{wordColor}};">{{item}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="word_text">
+            <input bindinput="onWordInput" class="word_input" placeholder="请输入文字" value="{{wordText}}"></input>
+            <button bindtap="onClearTap" class="word_btn">清 空</button>
+        </view>
+        <view class="option_zone">
+            <view class="opt word_color">
+                <view class="label">文字颜色</view>
+                <view class="colors">
+                    <view bindtap="wordColorTap" class="color_item {{wordColor==item.color?'checked':''}}" data-id="{{index}}" style="background: {{item.color}}" wx:for="{{optionList}}" wx:key="item">
+                        <image class="ok_icon" src="{{item.icon}}"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="opt bg_color">
+                <view class="label">背景颜色</view>
+                <view class="colors">
+                    <view bindtap="bgColorTap" class="color_item {{wordBackground==item.color?'checked':''}}" data-id="{{index}}" style="background: {{item.color}}" wx:for="{{optionList}}" wx:key="index">
+                        <image class="ok_icon" src="{{item.icon}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="cropper-buttons" style="margin: 40rpx;">
+            <button bindtap="getCropperImage" class="btn sure_btn" style="float: right;">
+          保存图片
+      </button>
+        </view>
+    </view>
+    <view class="hide_canvas">
+        <canvas canvasId="imageCanvas" id="imageCanvas" style="width:{{canvasWidth}}px; height:{{9*canvasWidth}}px; background-color: #fff; display: block;"></canvas>
+    </view>
+</view>

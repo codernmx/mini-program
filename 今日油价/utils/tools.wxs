@@ -1,0 +1,17 @@
+var foemateUrl = function (param) {
+	return param.split('/').pop();
+}
+
+var cutStr = function (str, start, end) {
+	if (str) {
+		var strnew = str.substring(start, end);
+		return strnew
+	} else {
+		return str
+	}
+
+}
+module.exports = {
+	foemateUrl: foemateUrl,
+	cutStr: cutStr
+};

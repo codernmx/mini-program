@@ -1,0 +1,18 @@
+.page {
+    padding: 20rpx;
+}
+page{
+    /* background: #e9e9e9; */
+}
+
+.item {
+    /* background: #fff; */
+    /* border-radius: 15rpx; */
+    padding: 0 15rpx;
+    margin-bottom: 15rpx;
+    border-bottom: 1rpx solid #f1ecec;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    justify-content: space-between;
+}

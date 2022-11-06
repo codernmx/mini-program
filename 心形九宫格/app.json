@@ -1,0 +1,68 @@
+{
+    "pages": [
+        "pages/tools/index",
+        "pages/help/index",
+        "pages/compressImage/index",
+        "pages/cut/index",
+        "pages/card/index",
+        "pages/joint/index",
+        "pages/qrcode/index",
+        "pages/graffiti/index/index",
+
+
+        "pages/others/qietu/qietu",
+        "pages/others/icon/icon",
+        "pages/others/pintu/pintu",
+        "pages/others/heart/heart",
+        "pages/others/isave/isave",
+        "pages/others/result/result",
+        "pages/others/tips/tips",
+        "pages/others/wenzi/wenzi",
+        "pages/others/img/img",
+        "pages/graffiti/painting/painting",
+        "pages/graffiti/photo/photo",
+        "pages/graffiti/pixel/pixel"
+    ],
+
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "图片处理",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false
+    },
+
+    "usingComponents": {
+        "van-area": "./vant-weapp/area/index",
+        "van-button": "./vant-weapp/button/index",
+        "van-cell": "./vant-weapp/cell/index",
+        "van-cell-group": "./vant-weapp/cell-group/index",
+        "van-divider": "./vant-weapp/divider/index",
+        "van-field": "./vant-weapp/field/index",
+        "van-icon": "./vant-weapp/icon/index",
+        "van-image": "./vant-weapp/image/index",
+        "van-nav-bar": "./vant-weapp/nav-bar/index",
+        "van-panel": "./vant-weapp/panel/index",
+        "van-popup": "./vant-weapp/popup/index",
+        "van-progress": "./vant-weapp/progress/index",
+        "van-datetime-picker": "./vant-weapp/datetime-picker/index",
+        "van-picker": "./vant-weapp/picker/index",
+        "van-overlay": "./vant-weapp/overlay/index",
+        "van-slider": "./vant-weapp/slider/index"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        },
+        "openapi": [
+            "security.imgSecCheck",
+            "security.mediaCheckAsync"
+        ]
+    },
+    "useExtendedLib": {
+        "kbone": true,
+        "weui": true
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

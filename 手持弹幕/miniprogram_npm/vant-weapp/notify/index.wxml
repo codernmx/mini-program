@@ -1,0 +1,4 @@
+<van-transition customClass="van-notify" customStyle="background-color:{{backgroundColor}}; color: {{color}}; z-index: {{zIndex}};" name="slide-down" show="{{show}}">
+    <view class="van-notify__safe-top" style="padding-top: {{statusBarHeight}}px" wx:if="{{safeAreaInsetTop}}"></view>
+  {{text}}
+</van-transition>

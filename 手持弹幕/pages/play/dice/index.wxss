@@ -1,0 +1,306 @@
+page {
+    background-color: #000;
+}
+
+.page {
+    padding-top: 128rpx;
+}
+
+.page.ipx {
+    padding-top: 176rpx;
+}
+
+.red-dot {
+    width: 20rpx;
+    height: 20rpx;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.back-img {
+    width: 24rpx;
+    height: 40rpx;
+    padding: 70rpx 40rpx;
+}
+
+.back-img.ipx {
+    padding-top: 108rpx;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex-grow: 1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.page-bg {
+    position: fixed;
+    z-index: -99;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.white {
+    color: #fff;
+}
+
+button:after,button:before {
+    display: none;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.flash-btn {
+    width: 360rpx;
+    line-height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #fff;
+    font-size: 36rpx;
+}
+
+.flash-bg {
+    background-size: 750rpx 972rpx;
+    background-position: top;
+    background-color: #000;
+    background-repeat: no-repeat;
+}
+
+.flash-bg.ipx {
+    background-position: center 48rpx;
+}
+
+.fz-30 {
+    font-size: 30rpx;
+}
+
+.fz-32 {
+    font-size: 32rpx;
+}
+
+.fz-48 {
+    font-size: 48rpx;
+}
+
+.official {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.full-w {
+    width: 100%;
+}
+
+.full-h {
+    height: 100%;
+}
+
+page {
+    width: 100%;
+}
+
+.wimg {
+    width: 600rpx;
+    height: 600rpx;
+}
+
+.wview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ipx {
+    margin-top: 180rpx;
+}
+
+.share-friend {
+    position: fixed;
+    bottom: 100rpx;
+    right: 0;
+    color: #fff;
+    font-size: 30rpx;
+    width: 215rpx;
+    height: 70rpx;
+    background-color: #e7c91b;
+    border-radius: 35rpx 0 0 35rpx;
+    border: 1rpx solid #2345ad;
+    opacity: .9;
+    text-align: center;
+    line-height: 70rpx;
+    text-indent: 40rpx;
+}
+
+.share-friend image {
+    width: 27rpx;
+    height: 30rpx;
+    display: block;
+    position: absolute;
+    top: 20rpx;
+    left: 37rpx;
+}
+
+.img1 {
+    top: 550rpx;
+}
+
+.img1,.img2 {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.img2 {
+    top: 580rpx;
+    right: 240rpx;
+}
+
+.img3 {
+    top: 620rpx;
+    right: 430rpx;
+}
+
+.img3,.img4 {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.img4 {
+    top: 670rpx;
+    right: 340rpx;
+    z-index: 1;
+}
+
+.img5 {
+    top: 660rpx;
+    right: 240rpx;
+}
+
+.img5,.img6 {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.img6 {
+    top: 610rpx;
+    right: 320rpx;
+}
+
+.share {
+    width: 180px;
+    background-color: transparent!important;
+    color: #ffad0b!important;
+    border: 1px solid #ffad0b;
+}
+
+.shake {
+    width: 276rpx;
+    height: 114rpx;
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+}
+
+.next {
+    color: #fff;
+    font-size: 40rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.setting-item {
+    position: absolute;
+    width: 280rpx;
+    height: 100rpx;
+    left: 50%;
+    margin-left: -140rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 63%;
+}
+
+.btn-triangle {
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.demo-wrap {
+    background-color: #4e87d2;
+    width: 200rpx;
+    height: 80rpx;
+    color: #fff;
+    border-top-right-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+    justify-content: flex-end;
+    padding-right: 20rpx;
+    font-size: 48rpx;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0rpx;
+    z-index: 13;
+}
+
+.minus {
+    margin-right: 10rpx;
+}
+
+.add,.minus {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.add {
+    margin-left: 10rpx;
+}
+
+.rule-wrap {
+    background-color: #4e87d2;
+    width: 200rpx;
+    height: 80rpx;
+    border-top-left-radius: 30rpx;
+    border-bottom-left-radius: 30rpx;
+    justify-content: flex-end;
+    padding-left: 40rpx;
+    font-size: 48rpx;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0rpx;
+    z-index: 13;
+}
+
+.common-rule {
+    color: #fff;
+    font-size: 32rpx;
+    line-height: 80rpx;
+}

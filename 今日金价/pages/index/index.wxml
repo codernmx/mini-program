@@ -1,0 +1,35 @@
+<view class="page">
+    <view class="time">
+        <view style="color: #3C9CFF;font-weight: 550;">{{time}}</view>
+        <view class="type" bindtap="open">{{showType}}</view>
+    </view>
+    <view class="head">
+        <view>品种</view>
+        <view wx:if="{{showType != '银行账户黄金'}}">开盘价</view>
+        <view wx:if="{{showType != '银行账户黄金'}}">开盘价</view>
+        <view wx:if="{{showType == '银行账户黄金'}}">买入价</view>
+        <view wx:if="{{showType == '银行账户黄金'}}">卖出价</view>
+        <view>涨跌幅</view>
+    </view>
+    <view class="body" wx:for="{{list}}" bindtap="openDetail" data-item="{{item}}">
+        <view class="item" style="width: 30%;">
+            <view>{{item.typename}}</view>
+            <view class="typeName">{{item.type}}</view>
+        </view>
+        <view class="item" wx:if="{{showType != '银行账户黄金'}}">{{item.price}}</view>
+        <view class="item" wx:if="{{showType != '银行账户黄金'}}">{{item.openingprice}}</view>
+        <view class="item" wx:if="{{showType == '银行账户黄金'}}" style="font-size: 24rpx;">{{item.buyprice}}</view>
+        <view class="item" wx:if="{{showType == '银行账户黄金'}}" style="font-size: 24rpx;">{{item.sellprice}}</view>
+        <view class="item {{item.changepercent > 0 ? 'red':'green'}}" wx:if="{{item.changepercent}}">
+            <text>{{item.changepercent}}</text>
+            <text wx:if="{{showType == '上海黄金交易所' || showType == '银行账户黄金' ||showType == '香港黄金' }}">%</text>
+        </view>
+        <view class="item" wx:else="">-</view>
+    </view>
+</view>
+
+
+
+<van-popup show="{{ show }}" round position="bottom" custom-style="height: 40%" bind:close="open">
+    <van-picker columns="{{ typeList }}" bind:cancel="open" bind:confirm="submit" show-toolbar />
+</van-popup>

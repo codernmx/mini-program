@@ -1,0 +1,96 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "compileHotReLoad": true
+    },
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "projectname": "%E5%BF%83%E5%BD%A2%E4%B9%9D%E5%AE%AB%E6%A0%BC",
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "我的",
+                    "pathName": "pages/me/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "压缩图片",
+                    "pathName": "pages/compressImage/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "工具",
+                    "pathName": "pages/tools/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "九宫格",
+                    "pathName": "pages/nine/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "图片加水印",
+                    "pathName": "pages/card/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "图片拼接",
+                    "pathName": "pages/joint/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "生成二维码",
+                    "pathName": "pages/qrcode/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "横向拍照",
+                    "pathName": "pages/cross/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "涂鸦专区",
+                    "pathName": "pages/graffiti/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "功能教程",
+                    "pathName": "pages/help/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "图片确认",
+                    "pathName": "pages/others/icon/icon",
+                    "query": "pic=http%253A%252F%252Ftmp%252FR6ec4OPWdpyY445ef373aeaedf9c1a3b35dbe931440e.png",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "结果页面",
+                    "pathName": "pages/others/result/result",
+                    "query": "src=http%3A%2F%2Ftmp%2Faq2qfNgCTZGN14c5db416e9bc841e5a64a8f54ac0f0b.png",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "保存结果tips",
+                    "pathName": "pages/others/tips/tips",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

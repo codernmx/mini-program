@@ -1,0 +1,24 @@
+<van-search value="{{ value }}" placeholder="输入经纬度查询地名（逗号分割）" bind:change="search" />
+<view class="container">
+    <map id="map4select" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-scale show-compass show-location bindregionchange="regionchange" class='map' style="height: {{screenHeight}}rpx;">
+        <cover-image class="cover-image" bindtap="my_location" src="../../assets/img/wz.png" />
+    </map>
+</view>
+
+<view class="page">
+    <view class="top15 flex jwd">
+        <view>
+            <view>经度：{{longitude}}</view>
+            <view>纬度：{{latitude}}</view>
+        </view>
+        <view class="copy" bindtap="copyJwd">复制</view>
+    </view>
+    <view class="top15 flex">
+        <view>位置：{{address}}</view>
+        <view class="copy" bindtap="copyAddress">复制</view>
+    </view>
+    <view class="flex center top">
+        <button class="my" bindtap="Location">我的位置</button>
+        <button class="share" open-type="share">分享</button>
+    </view>
+</view>

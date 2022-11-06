@@ -1,0 +1,78 @@
+page {
+    background-color: #000;
+}
+
+.head {
+    color: #fff;
+    display: flex;
+    align-items: right;
+    font-size: 24rpx;
+}
+
+.icon-message button {
+    background-color: transparent;
+    padding: 0;
+}
+
+.icon-message {
+    position: fixed;
+    top: 60rpx;
+    left: 32rpx;
+    z-index: 9;
+    opacity: .5;
+}
+
+.icon-message image {
+    display: block;
+    width: 68rpx;
+    height: 68rpx;
+}
+
+.menu {
+    padding: 10rpx 20rpx;
+}
+
+.menu-title {
+    font-size: 30rpx;
+    font-weight: 400;
+    width: 100%;
+    color: #fff;
+    opacity: .5;
+}
+
+.menu-list {
+    margin-top: 20rpx;
+    flex-wrap: wrap;
+}
+
+.item,.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    width: calc(50vw - 30rpx);
+    height: 16vw;
+    justify-content: center;
+    background-color: #1b1b1c;
+    color: #fff;
+    border-radius: 16rpx;
+    margin-bottom: 20rpx;
+}
+
+.item-all {
+    width: 100%;
+    height: 28vw;
+    font-size: 60rpx;
+    font-weight: 600;
+}
+
+.item-l {
+    margin-right: 10rpx;
+    font-weight: 400;
+}
+
+.item-r {
+    margin-left: 10rpx;
+    font-weight: 400;
+}

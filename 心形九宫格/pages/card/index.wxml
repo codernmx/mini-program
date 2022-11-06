@@ -1,0 +1,28 @@
+<canvas wx:if="{{src}}" style="height: {{canvasHeight}}px;width: {{canvasWeight}}px;" canvas-id="firstCanvas" bindtap="chooseImg"></canvas>
+<view class="page">
+    <view class="upload" bindtap="chooseImg" wx:if="{{!src}}">
+        <view>上传图片</view>
+    </view>
+    <van-field label="水印内容" placeholder="请输入水印内容" value="{{ value }}" border="{{ true }}" bind:change="changeValue" bind:blur="initCanvas" bind:confirm="initCanvas" />
+    <view class="flex top">
+        <view style="width: 160rpx;">水印角度：</view>
+        <view style="flex: 1;">
+            <van-slider value="{{angle}}" min="-90" max="90" bind:change="onChange" />
+        </view>
+        <view>{{angle}}</view>
+    </view>
+
+    <view class="flex">
+        <view style="width: 160rpx;">水印间隔：</view>
+        <view style="flex: 1;">
+            <van-slider value="{{interval}}" min="20" max="150" bind:change="onChangeInter" />
+        </view>
+        <view>{{interval}}</view>
+    </view>
+    <view class="btn">
+        <van-button plain type="primary" round bindtap="save">保存图片</van-button>
+    </view>
+
+    <!-- 分享 -->
+    <button open-type="share" class="share" type="primary">推荐给朋友</button>
+</view>

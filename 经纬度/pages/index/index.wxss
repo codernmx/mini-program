@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.map {
+    width: 100%;
+    height: 800rpx;
+}
+
+.my {
+    background: #F37B1D;
+    width: 200rpx !important;
+    padding: 13rpx 0 !important;
+    color: #fff;
+    font-weight: 500;
+    height: 80rpx;
+    line-height: 55rpx;
+}
+
+.share {
+    background: #1CBBB4;
+    width: 200rpx !important;
+    padding: 13rpx 0;
+    color: #fff;
+    font-weight: 500;
+    height: 80rpx;
+    line-height: 55rpx;
+}
+
+.jwd {
+    align-items: center;
+}
+
+.copy {
+    background: #1CBBB4;
+    color: #fff;
+    padding: 5rpx 10rpx;
+    border-radius: 15rpx;
+}

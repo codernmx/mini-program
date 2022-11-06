@@ -1,0 +1,17 @@
+<view class="images">
+    <view class="imageShow">
+        <scroll-view scrollY="true" style="height:100%;">
+            <view class="preview-image" style="background-image:url({{item.url}});background-repeat:no-repeat;background-size:100% auto;" wx:for="{{images}}" wx:for-index="idx" wx:key="key">
+                <image bindtap="previewImage" class="oneImage" data-idx="{{idx}}" mode="aspectFill" src="{{item}}"></image>
+                <view catchtap="deleteOneImage" class="remove" data-index="{{idx}}">移除{{idx+1}}</view>
+            </view>
+            <view class="preview-image">
+                <view bindtap="addImage" class="select-image" hoverClass="select-image-hover">选择图片</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<view class="bottom-tab">
+    <button bindtap="clearImages" class="tabBtn">清空当前</button>
+    <button bindtap="finish" class="tabBtn">合成拼图</button>
+</view>

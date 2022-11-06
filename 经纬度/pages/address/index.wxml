@@ -1,0 +1,9 @@
+<van-search value="{{ value }}" placeholder="输入地名查询经纬度" bind:change="search" />
+
+<view  class="page">
+    <view class="top item" wx:for="{{suggestion}}" wx:key="index">
+        <view bindtap="toIndex" data-item="{{item}}">{{item.title}}</view>
+        <!--渲染详细地址-->
+        <view style="font-size:12px;color:#666;">{{item.addr}}</view>
+    </view>
+</view>

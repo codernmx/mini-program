@@ -1,0 +1,57 @@
+.page {
+    padding: 30rpx;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+    font-size: 36rpx;
+}
+
+.head {
+    background: #F4F6FB;
+    color: #8997BD;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 10rpx;
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100rpx;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #f1ecec;
+}
+
+.typeName {
+    font-size: 24rpx;
+}
+
+.type {
+    color: #F9AE3D;
+    border: 1px solid #F9AE3D;
+    text-align: center;
+    width: 300rpx;
+    border-radius: 10rpx;
+    padding: 5rpx 0;
+}
+
+.item,
+.head view {
+    width: 25%;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: #2CC774;
+}

@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+        "van-search": "../../vant-weapp/search/index"
+    },
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "经纬度"
+}

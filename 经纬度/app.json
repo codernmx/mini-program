@@ -1,0 +1,62 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/elevation/index",
+        "pages/address/index",
+        "pages/distance/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#07C160",
+        "navigationBarTitleText": "经纬度",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#3e85e9",
+        "list": [
+
+            {
+                "pagePath": "pages/index/index",
+                "text": "经纬度",
+                "iconPath": "/assets/img/tabbar/lat.png",
+                "selectedIconPath": "/assets/img/tabbar/lat-a.png"
+            },
+            {
+                "pagePath": "pages/distance/index",
+                "text": "距离",
+                "iconPath": "/assets/img/tabbar/dis.png",
+                "selectedIconPath": "/assets/img/tabbar/dis-a.png"
+            },
+            {
+                "pagePath": "pages/address/index",
+                "text": "地名查经纬度",
+                "iconPath": "/assets/img/tabbar/add.png",
+                "selectedIconPath": "/assets/img/tabbar/add-a.png"
+            },
+            {
+                "pagePath": "pages/elevation/index",
+                "text": "海拔",
+                "iconPath": "/assets/img/tabbar/sea.png",
+                "selectedIconPath": "/assets/img/tabbar/sea-a.png"
+            }
+
+        ]
+    },
+    "plugins": {
+        "chooseLocation": {
+            "version": "1.0.6",
+            "provider": "wx76a9a06e5b4e693e"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+      ],
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

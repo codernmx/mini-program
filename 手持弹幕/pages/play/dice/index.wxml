@@ -1,0 +1,21 @@
+<image catchtap="onExit" class="back-img {{isIpx?'ipx':''}}" src="/images/drink/back.png"></image>
+<view class="wview {{isIpx?'ipx':''}}">
+    <view class="demo-wrap flex bold">
+        <image bindtap="reduceDice" class="minus" src="/images/niuniu/ico_minus.png"></image>
+            {{diceNum}}  
+          <image bindtap="addDice" class="add" src="/images/niuniu/ico_add.png"></image>
+    </view>
+    <image class="wimg" src="/images/niuniu/w.png" style="{{isIpx?'margin-top: 120rpx;':'margin-top: 160rpx;'}}"></image>
+    <image animation="{{animation1}}" class="img1" src="{{img1}}" wx:if="{{img1}}"></image>
+    <image animation="{{animation2}}" class="img2" src="{{img2}}" wx:if="{{img2}}"></image>
+    <image animation="{{animation3}}" class="img3" src="{{img3}}" wx:if="{{img3}}"></image>
+    <image animation="{{animation4}}" class="img4" src="{{img4}}" wx:if="{{img4}}"></image>
+    <image animation="{{animation5}}" class="img5" src="{{img5}}" wx:if="{{img5}}"></image>
+    <image animation="{{animation6}}" class="img6" src="{{img6}}" wx:if="{{img6}}"></image>
+    <view bindtap="next" class="nextview" wx:if="{{adtag||1}}">
+        <image class="shake" src="/images/niuniu/shake.png"></image>
+    </view>
+    <view class="ad" wx:if="{{adunit.banner}}">
+        <ad unitId="{{adunit.banner}}"></ad>
+    </view>
+</view>

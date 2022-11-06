@@ -1,0 +1,190 @@
+﻿<view class="container">
+    <swiper autoplay="{{true}}" circular="{{true}}" class="banner-swiper data-v-e46ae548" duration="{{1000}}" interval="{{5000}}">
+        <navigator appId="wxc82cd178c3a6a4be" hoverClass="none" openType="navigate" target="miniProgram" version="trial">
+            <swiper-item class="banner-swiper-item data-v-e46ae548">
+                <view class="content">
+                    <image mode="widthFix" src="/static/images/home/banner1.png"></image>
+                </view>
+            </swiper-item>
+        </navigator>
+        <navigator appId="wx0dc7219093ff055d" hoverClass="none" openType="navigate" target="miniProgram" version="trial">
+            <swiper-item class="banner-swiper-item data-v-e46ae548">
+                <view class="content">
+                    <image mode="widthFix" src="/static/images/home/banner2.png"></image>
+                </view>
+            </swiper-item>
+        </navigator>
+    </swiper>
+    <view class="text-head">手持弹幕小工具</view>
+    <view class="text-info" divstyle="text-align:center">多种LED手持弹幕特效</view>
+    <view class="menu-list">
+        <view bindtap="menuTap" class="item item-{{item.class}}" data-page="{{item.page}}" wx:for="{{menus}}" wx:key="unique">
+            <view class="item-title">{{item.name}}</view>
+        </view>
+    </view>
+    <view class="body">
+        <navigator hoverClass="none" openType="navigate" url="/pages/classics/classics?template=0">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/yuanban.jpg"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">简洁原版</view>
+                            <view class="lable">
+                                <view class="hot-title">23.3万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">支持修改文字、字号大小，文字颜色，背景颜色，滚动速度</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <navigator hoverClass="none" openType="navigate" url="/pages/classics/classics?template=1">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/douyin.jpg"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">抖音效果版</view>
+                            <view class="lable">
+                                <view class="hot-title">21.9万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">抖音故障风格版本，支持简版所有功能。</view>
+                    </view>
+                </view>
+            </view>
+            <view class="boxs ad">
+                <ad unitId="adunit-f4eeae28db49799d"></ad>
+            </view>
+        </navigator>
+        <navigator hoverClass="none" openType="navigate" url="/pages/classics/classics?template=6">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/xiangsu.jpg"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">像素效果版</view>
+                            <view class="lable">
+                                <view class="hot-title">13.1万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">超好玩的像素效果</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <navigator hoverClass="none" openType="navigate" url="/pages/classics/classics?template=5">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/liti.jpg"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">立体效果版</view>
+                            <view class="lable">
+                                <view class="hot-title">28.1万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">3D立体字效果</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <navigator hoverClass="none" openType="navigate" url="/pages/classics/classics?template=3">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/shanshuo.gif"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">闪烁跳动效果版</view>
+                            <view class="lable">
+                                <view class="hot-title">21.1万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">超有氛围感的闪烁跳动效果。</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <navigator hoverClass="none" openType="navigate" url="/pages/play/twinkle/index">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/shanpin.gif"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">酷炫闪屏</view>
+                            <view class="lable">
+                                <view class="hot-title">21.1万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">蹦迪必备，超嗨闪屏效果</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <view class="text-head1">其他小工具</view>
+        <view class="text-info1" divstyle="text-align:center">更多实用小工具</view>
+        <navigator appId="wxc82cd178c3a6a4be" class="btn" openType="navigate" target="miniProgram" version="trial">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/elm.png"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">外卖红包优惠券</view>
+                            <view class="lable">
+                                <view class="hot-title">37.3万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">点外卖先领券！一年省出一套房！</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <navigator appId="wxafd347ac97fcc5dd" class="btn" openType="navigate" target="miniProgram" version="trial">
+            <view class="boxs">
+                <view class="boxs-body">
+                    <image class="boxs-image" src="/static/images/home/zhuajiu.png"></image>
+                    <view class="info">
+                        <view class="title-icon">
+                            <view class="boxs-title">活动抽签抓阄</view>
+                            <view class="lable">
+                                <view class="hot-title">8.3万</view>
+                                <view>
+                                    <image class="hot" src="/static/images/home/hot.png"></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="boxs-info">抓阄神器，抽签抓阄，选择神器，排顺序工具，分任务工具助手</view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+        <view class="boxs ad">
+            <ad unitId="adunit-6fc5022dcf5b8d78"></ad>
+        </view>
+        <view class="copyright">
+        小编微信：sovipos
+      </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+var formatObject = function (arr, e) {
+    return arr[e]
+}
+
+var toFixed = function (val, num) {
+    return val ? val.toFixed(num) : '0'
+}
+module.exports = {
+    formatObject: formatObject,
+    toFixed: toFixed
+};

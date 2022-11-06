@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "add-tips": "/components/weplug-add-tips/index"
+    },
+    "navigationBarTitleText": "工具列表"
+}

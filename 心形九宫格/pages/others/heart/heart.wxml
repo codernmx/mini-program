@@ -1,0 +1,28 @@
+<canvas canvasId="mainCanvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;position:absolute;left:-{{canvasWidth}}px;"></canvas>
+<canvas canvasId="gridCanvas" style="width: {{gridCanvasWidth}}px; height: {{gridCanvasHeight}}px;position:absolute;left:-{{gridCanvasWidth}}px;"></canvas>
+<view style="padding-top:{{pddingTop}}px; height:300px;">
+    <view class="clip-container " style="background:{{bgColor}};margin:0 auto;width:{{panelWidth}}px;height:{{panelHeight}}px; ">
+        <view bindtouchend="touchend" bindtouchmove="touchmove" bindtouchstart="touchstart" class="clip-item " data-index="{{index}}" style="left:{{item.left}}px;top:{{item.top}}px;width:{{item.width}}px;height:{{item.height}}px; " wx:for="{{parts}}" wx:key="idx">
+            <image class="{{!item.collide?'':'collide'}} " src="{{item.url}} " style="left:{{item.imgLeft}}px;top:{{item.imgTop}}px;width:{{item.imgWidth}}px;height:{{item.imgHeight}}px; " wx:if="{{item.url}}"></image>
+        </view>
+    </view>
+</view>
+<view class="addimg">
+    <view bindtap="tapAddPics" class="button color1">添加图片</view>
+    <view class="buttonl"></view>
+    <view bindtap="fillParts" class="button color2">自动填满</view>
+    <view class="buttonl"></view>
+    <view bindtap="tapExport" class="button color3">存一张图</view>
+    <view class="buttonl"></view>
+    <view bindtap="beforeExportNine" class="button color4">存九张图</view>
+    <view class="buttonl"></view>
+    <view bindtap="clearAll" class="button color1">清空所有</view>
+</view>
+<view class="bgbg">
+    <text style="color:#555 ">背景设置：</text>
+    <radio-group bindchange="radioChange">
+        <label wx:for="{{[ {name:'white',checked:true,value:'白底'},{name:'transparent',checked:false,value:'透明'} ]}}" wx:key="idx">
+            <radio checked="{{item.checked}}" value="{{item.name}}"></radio> {{item.value}}
+        </label>
+    </radio-group>
+</view>

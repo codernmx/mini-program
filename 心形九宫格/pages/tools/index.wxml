@@ -1,0 +1,54 @@
+
+<add-tips text="添加到我的小程序，下次使用更方便" duration="12" />
+
+
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+        <image src="https://bt.nmxgzs.cn/upload/2022-10-23/W6psmA.jpg" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item class="swiperItem" bindtap="openMini" data-id="2">
+        <image src="https://bt.nmxgzs.cn/upload/2022-10-23/Ukggk4.jpg" mode="aspectFill" />
+    </swiper-item>
+</swiper>
+<!-- item -->
+<view class="itemBox">
+    <view bindtap="toPage" data-url="/pages/compressImage/index">
+        <image src='http://inews.gtimg.com/newsapp_ls/0/14410413586/0'></image>
+        <text>图片压缩</text>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/card/index">
+        <image src='http://inews.gtimg.com/newsapp_ls/0/14410563237/0'></image>
+        <text>证件水印</text>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/joint/index">
+        <image src='http://inews.gtimg.com/newsapp_ls/0/14410564224/0'></image>
+        <text>图片拼接</text>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/qrcode/index">
+        <image src='http://inews.gtimg.com/newsapp_ls/0/14410566566/0'></image>
+        <text>二维码生成</text>
+    </view>
+    <!-- 分享 -->
+    <button open-type="share" class="share" type="primary">推荐给朋友</button>
+    <!--
+    http://inews.gtimg.com/newsapp_ls/0/14410582910/0 -->
+</view>
+
+
+<view class="main">
+    <view>
+        <navigator appId="{{item.appId}}" class="nav_item" openType="{{item.openType}}" path="{{item.path}}" target="{{item.target}}" url="{{item.url}}" wx:for="{{navList_bak}}" wx:key="item">
+            <image class="nav_icon" src="{{item.icon}}"></image>
+            <view class="text">
+                <view class="title">{{item.name}}</view>
+                <view class="desc">{{item.remark}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>
+
+
+<view class="copy">Copyright © 2022 By Maisy</view>

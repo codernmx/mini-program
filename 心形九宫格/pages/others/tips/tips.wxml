@@ -1,0 +1,23 @@
+<view class="container" style="height: {{winHeight+tabBarHeight}}rpx;">
+    <view class="main">
+        <view class="cricle"></view>
+        <view class="image">
+            <image src="{{showImage}}"></image>
+        </view>
+        <image class="text" mode="widthFix" src="../../image/info/tips.png"></image>
+        <view class="btn_zone">
+            <view class="item" bindtap="navigateBack">
+                <button  class="btn">
+                    <image class="btn_img" src="../../../assets/imgs/icon/back.png"></image>
+                </button>
+                <view class="btn_text">返回上页</view>
+            </view>
+            <view class="item">
+                <button class="btn" openType="share">
+                    <image class="btn_img" src="../../../assets/imgs/icon/share.png"></image>
+                </button>
+                <view class="btn_text">分享好友</view>
+            </view>
+        </view>
+    </view>
+</view>

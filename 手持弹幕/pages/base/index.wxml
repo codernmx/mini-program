@@ -1,0 +1,24 @@
+<view class="home">
+    <view class="head" style="height:{{headHeight}}px"></view>
+    <view class="icon-message">
+        <button openType="feedback">
+            <image src="../../images/icon_message.png"></image>
+        </button>
+    </view>
+    <view class="menu">
+        <view class="content-banner" wx:if="{{adVideoOff}}">
+            <ad-custom bindclose="adVideoClose" binderror="adError" bindload="adVideoLoad" unitId="adunit-6ede362c25e8f5d8"></ad-custom>
+        </view>
+        <view class="menu-list">
+            <view bindtap="menuTap" class="item item-{{item.class}}" data-page="{{item.page}}" wx:for="{{menus}}" wx:key="unique">
+                <view class="item-title">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="menu-title">其他功能</view>
+        <view class="menu-list">
+            <view bindtap="menuTap" class="item item-{{item.class}}" data-page="{{item.page}}" wx:for="{{more}}" wx:key="unique">
+                <view class="item-title">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

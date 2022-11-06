@@ -1,0 +1,14 @@
+<view class="isave">
+    <view class="tips">左右滑动查看图片或者点击图片进行预览！</view>
+    <view class="imageShow">
+        <scroll-view scrollX="true">
+            <view>
+                <image bindtap="previewImage" data-url="{{mixImage}}" src="{{mixImage}}" style="height:800rpx;width:{{imageWidth}}rpx;"></image>
+            </view>
+        </scroll-view>
+    </view>
+    <view bindtap="saveImage" class="saveImage">保存</view>
+</view>
+<view style="width:0px;height:0px;overflow:hidden;">
+    <canvas canvasId="shareCanvas" class="shareCanvas" style="left:9000px;width:10000px;height:800px;"></canvas>
+</view>

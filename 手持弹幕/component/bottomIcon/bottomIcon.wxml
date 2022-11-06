@@ -1,0 +1,5 @@
+<view bindtap="_onChangeEvent" class="menu-item" data-change-name="{{changeName}}">
+    <view class="menu-value" hidden="{{!currentIndex}}">{{currentIndex}}</view>
+    <image class="menu-img" src="{{img}}"></image>
+    <view class="menu-title">{{title}}</view>
+</view>

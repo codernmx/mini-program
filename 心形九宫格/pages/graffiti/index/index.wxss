@@ -1,0 +1,49 @@
+/* .item {
+        color: #888;
+        background: #fff;
+        padding: 20px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(153, 204, 255, 0.3);
+} */
+
+
+
+/* 复制过来 */
+.main {
+        position: relative;
+}
+
+.nav_item {
+        background: #fff;
+        position: relative;
+        border-radius: 8rpx;
+        display: block;
+        margin: 32rpx 32rpx;
+        overflow: hidden;
+        border: solid 1px #f2f2f2;
+        box-shadow: 0px 2px 5px 5px #F6F6F6;
+}
+
+.nav_item .nav_icon {
+        height: 90rpx;
+        width: 90rpx;
+        border-radius: 16rpx;
+        margin: 42rpx 28rpx 42rpx 32rpx;
+        display: block;
+        float: left;
+}
+
+.text .title {
+        font-size: 34rpx;
+        margin-top: 38rpx;
+        color: #555;
+}
+
+.text .desc {
+        font-size: 30rpx;
+        color: #aaa;
+        margin-top: 16rpx;
+        line-height: 30rpx;
+        padding-right: 8rpx;
+}

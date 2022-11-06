@@ -1,0 +1,115 @@
+<view class="wrapper">
+    <view bindtap="lockClick" class="icon-lock {{hideLock?'hide':''}}">
+        <image src="../../images/Lock.png" wx:if="{{lockOff}}"></image>
+        <image src="../../images/Unlocked.png" wx:else></image>
+    </view>
+    <view bindtap="documentClick" id="scrollBox" style="background-color: {{bgColor}};">
+        <view class="content" style="padding: {{!condition?'0 20rpx':'200rpx 0'}};">
+            <view animation="{{scorll}}" class="scorll-text" id="animationText" wx:if="{{condition}}">
+                <view class="{{scorllTextStyle}}" style="color: {{textColor}};text-shadow:2px 2px 42px {{textShadow}};font-size: {{fontSize}}px;">
+                    <text class="{{textBlackShadow}} {{text3D}} {{border}} {{douyin}}" style="font-family: {{fontStyleValue}};" wx:for="{{textArr}}" wx:key="unique">{{item}}</text>
+                </view>
+            </view>
+            <view class="zero {{scorllTextStyle}}" style="text-shadow:2px 2px 42px {{textShadow}};color: {{textColor}};font-size: {{staticFontSize}}rpx;" wx:if="{{!condition}}">
+                <text class="{{textBlackShadow}} {{text3D}} {{border}} {{douyin}}" style="font-family: {{fontStyleValue}};">{{text}}</text>
+            </view>
+        </view>
+        <video autoplay="{{videoShow}}" controls="{{false}}" id="myVideo" loop="ture" muted="{{muted}}" objectFit="fill" showCenterPlayBtn="{{false}}" src="{{videoSrc}}" wx:if="{{videoShow}}"></video>
+    </view>
+    <view animation="{{animationText}}" class="footer">
+        <ad adIntervals="30" bindclose="adTextStyleClose" binderror="adHide" bindload="adLoad" unitId="adunit-b29d69318fff81c9"></ad>
+        <view class="input-box">
+            <image bindtap="goHome" class="go-back" src="../../images/go_home.png"></image>
+            <view id="submitBarrage">
+                <view class="input-text" style="padding-right:{{clearTextOff?'42px':'0'}};">
+                    <input bindconfirm="inputTextConfirm" bindfocus="cursorInput" bindinput="clearBtn" confirmType="send" cursorSpacing="10" id="input-label" placeholder="请输入弹幕文字" placeholderStyle="color: {{placeholderColor?'#fff':'#333'}}" style="text-align:{{clearTextOff?'left':'center'}};" value="{{userInput}}"></input>
+                </view>
+                <label bindtap="clearInputText" class="clear-text" for="input-label" wx:if="{{clearTextShow}}">
+                    <image src="../../images/clear-text.png"></image>
+                </label>
+            </view>
+            <image bindtap="onTextStyleDrawer" src="../../images/style.png"></image>
+        </view>
+        <view class="useful">
+            <view bindtap="modalinput" class="useful-title">
+                <image class="useful-add" src="../../images/icon_add_useful.png"></image>
+                <text>常用语</text>
+            </view>
+            <view class="useful-template">
+                <scroll-view scrollX style="white-space: nowrap;">
+                    <view class="scroll-view-box" wx:if="{{usefulOff}}">
+                        <view class="useful-template-list" wx:for="{{usefulText}}" wx:key="unique">
+                            <text bindtap="sendTextFunc" data-index="{{index}}">{{item}}</text>
+                            <image bindtap="clearTextFunc" data-index="{{index}}" src="../../images/clear-text.png"></image>
+                        </view>
+                    </view>
+                    <view class="useful-template-else" wx:else>不加点常用语备用吗？</view>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+    <view animation="{{animationTextStyle}}" id="setTextStyle">
+        <view class="classics-banner" id="setTextStyleAd" wx:if="{{adTextStyleOff}}">
+            <view class="classics-banner-box"></view>
+        </view>
+        <view bindtap="onAccomplish" id="accomplish">完成</view>
+        <scroll-view scrollY class="setTextStyle-box" style="white-space: nowrap;">
+            <view class="accomplish-btn-group">
+                <text class="speed-text">字体颜色</text>
+                <view class="accomplish-btn-group-box">
+                    <scroll-view class="panel-scroll color" scrollX="true">
+                        <button catchtap="colorControl" class="{{item.active?'active':''}} {{index==buttonColorNum?'btn-hover':''}}" data-color="{{item.value}}" data-index="{{index}}" style="background-color:{{item.value}}" wx:for="{{colorStyle}}" wx:key="unique"></button>
+                    </scroll-view>
+                </view>
+            </view>
+            <view class="accomplish-btn-group">
+                <text class="speed-text">字体</text>
+                <button bindtap="fontFamilyControl" class="accomplish-btn {{index==buttonFontFamilyNum?'btn-hover':''}}" data-index="{{index}}" wx:for="{{fontStyle}}" wx:key="unique">
+                    <image src="{{item.value}}"></image>
+                </button>
+            </view>
+            <view class="accomplish-btn-group">
+                <text class="speed-text">速度</text>
+                <button bindtap="onClickSpeed" class="accomplish-btn {{index==buttonSpeedNum?'btn-hover':''}}" data-index="{{index}}" wx:for="{{speedStyle}}" wx:key="unique">
+          {{item.name}}
+        </button>
+            </view>
+            <view class="accomplish-btn-group">
+                <text class="speed-text">字号</text>
+                <button bindtap="onClickFont" class="accomplish-btn {{index==buttonFontNum?'btn-hover':''}} {{index>=hideFontSizeIndex&&index!=5&&buttonSpeedNum==0?'hide':''}}" data-index="{{index}}" wx:for="{{sizeStyle}}" wx:key="unique">
+                    <text class="{{index==buttonFontAuto?'hide':''}}">{{item.name}}</text>
+                    <image class="{{index==buttonFontAuto?'':'hide'}}" src="../../images/auto.png"></image>
+                </button>
+            </view>
+            <view class="accomplish-btn-group video-bg">
+                <view class="select">
+                    <text class="speed-text">效果</text>
+                    <text class="speed-text speed-text-checkbox">「多选」</text>
+                </view>
+                <view class="accomplish-btn-group-box">
+                    <scroll-view class="panel-scroll" scrollX="true">
+                        <view class="relative" wx:for="{{textStyle}}" wx:key="unique">
+                            <button catchtap="effectControl" class="{{selectIndex[index].sureid?'btn-hover':''}}" data-active="{{item.active}}" data-index="{{index}}" data-variable="{{item.name}}">
+                                <image src="../../images/{{item.name}}.png"></image>
+                            </button>
+                        </view>
+                    </scroll-view>
+                </view>
+            </view>
+            <view class="accomplish-btn-group">
+                <text class="speed-text">背景颜色</text>
+                <view class="accomplish-btn-group-box">
+                    <scroll-view class="panel-scroll color" scrollX="true">
+                        <button catchtap="backgroundControl" class="{{item.active?'active':''}} {{index==buttonBgNum?'btn-hover':''}}" data-color="{{item.value}}" data-index="{{index}}" style="background-color:{{item.value}}" wx:for="{{backgroundStyle}}" wx:key="unique"></button>
+                    </scroll-view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <modal bindcancel="cancel" bindconfirm="confirm" cancelText="取消" confirmColor="#FF0071" confirmText="确定" hidden="{{hiddenmodalput}}" title="添加常用语">
+        <view class="modal-box">
+            <input bindinput="getConfirmText" cursorSpacing="120px" focus="{{modalInput}}" placeholder="请输入常用语" type="text" value="{{modalInputVal}}"></input>
+            <image bindtap="clearModelText" src="../../images/modal_clear.png" wx:if="{{modelClear}}"></image>
+        </view>
+    </modal>
+</view>

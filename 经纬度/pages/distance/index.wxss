@@ -1,0 +1,17 @@
+
+.box {
+    min-height: 130rpx;
+    align-items: center;
+    background: #fff;
+    margin-top: 30rpx;
+    border-radius: 10rpx;
+    padding: 0 30rpx;
+}
+
+.chooseImg{
+    width: 50rpx;
+    height: 50rpx;
+}
+.left{
+    justify-content: start;
+}

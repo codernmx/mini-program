@@ -1,0 +1,33 @@
+.page {
+  padding: 30rpx;
+}
+.box{
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40rpx;
+  background: #E3FFEF;
+  height: 140rpx;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.num{
+  color: #2CC774;
+  margin-right: 10rpx;
+  font-weight: 550;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  font-size: 36rpx;
+}
+.area{
+  color: #F9AE3D;
+  border: 1px solid #F9AE3D;
+  text-align: center;
+  width: 150rpx;
+  border-radius: 10rpx;
+  padding: 5rpx 0;
+}

@@ -1,0 +1,10 @@
+<view bindtap="tingzhi" class="bg" style="background: {{bg}}">
+    <view class="tishi" hidden="{{tshd}}">请摇晃手机</view>
+    <view hidden="{{fhhd}}" style="position: absolute;top: 53vh;width:100%;display:{{display}};justify-content:center;">
+        <ad style="width:100%" unitId="{{appconfig.kv.banner}}" wx:if="{{appconfig.kv.banner}}"></ad>
+    </view>
+    <view hidden="{{fhhd}}" id="tuer"></view>
+    <view bindtap="fanhui" class="fanhui" hidden="{{fhhd}}">
+        <text class="fanhui-txt">返回</text>
+    </view>
+</view>

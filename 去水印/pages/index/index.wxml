@@ -1,0 +1,69 @@
+<scroll-view scrollY="{{true}}">
+    <view class="adContainer">
+        <!-- <ad adTheme="white" adType="video" unitId="adunit-050164be5f37dbff"></ad> -->
+        <!--视频广告-->
+    </view>
+    <view class="top-container">
+        <view bindtap="guideTap" class="open-container">
+            <view class="btn-container" style="background: #1874CD;">
+                <image src="../../images/home_jc.png" style="height:40rpx;width:40rpx;margin-right: 10rpx;"></image>
+                教程
+            </view>
+        </view>
+        <view bindtap="questiopnTap" class="open-container">
+            <view class="btn-container" style="background: #9B30FF;">
+                <image src="../../images/home_jy.png" style="height:40rpx;width:40rpx;margin-right: 10rpx;"></image>
+                问题
+            </view>
+        </view>
+        <view class="open-container">
+            <view class="btn-container" style="background: #d81e06;">
+                <image src="../../images/home_share.png" style="height:42rpx;width:42rpx;margin-right: 10rpx;"></image>
+                分享
+            </view>
+            <button class="open-btn" openType="share"></button>
+        </view>
+        <view class="open-container">
+            <view class="btn-container" style="background: #228B22;">
+                <image src="../../images/home_kf.png" style="height:36rpx;width:36rpx;margin-right: 10rpx;"></image>
+                客服
+            </view>
+            <button class="open-btn" openType="contact"></button>
+        </view>
+    </view>
+    <view class="in">
+        <view class="input-container">
+            <input bindinput="inputChange" maxlength="-1" placeholder="请输入短视频链接" value="{{analysisUrl}}"></input>
+            <view bindtap="analysisTap">提取</view>
+        </view>
+    </view>
+    <view class="op-container">
+        <view bindtap="pasteTap" class="paste">粘贴地址</view>
+        <view bindtap="clearTap" class="clear">清空地址</view>
+    </view>
+    <view class="video-container">
+        <video class="result-video" hidden="{{hideResult}}" src="{{videoUrl}}"></video>
+    </view>
+    <view class="video-container">
+        <view class="desc-container" wx:if="{{desc}}">
+            <text class="desc">{{desc}}</text>
+            <view bindtap="copyDescTap" class="copy-desc">
+                <text>复制
+                    标题
+                </text>
+            </view>
+        </view>
+    </view>
+    <view class="video-container">
+        <view class="result-container" hidden="{{hideResult}}">
+            <!-- <view bindtap="saveTap" class="save">
+                <image src="../../images/phone.png" style="height:31px;width:31px;"></image>
+                下载视频
+            </view> -->
+            <view bindtap="copyLinkTap" class="copy" style="width: 500rpx;">
+                <image src="../../images/link.png" style="height:31px;width:31px;"></image>
+                复制视频链接到浏览器下载
+            </view>
+        </view>
+    </view>
+</scroll-view>

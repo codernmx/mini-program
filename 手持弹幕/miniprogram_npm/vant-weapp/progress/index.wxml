@@ -1,0 +1,8 @@
+<view class="van-progress custom-class">
+    <view class="van-progress__portion" style="width: {{percentage}}%; background: {{inactive?'#cacaca':color}}">
+        <view class="van-progress__pivot" style="color: {{textColor}}; background: {{pivotColor?pivotColor:inactive?'#cacaca':color}}" wx:if="{{showPivot&&getters.text(pivotText,percentage)}}">
+      {{getters.text(pivotText,percentage)}}
+    </view>
+    </view>
+</view>
+<wxs module="getters" src="index.wxs" />

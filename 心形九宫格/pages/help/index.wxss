@@ -1,0 +1,13 @@
+.title {
+    color: #3785B9;
+    font-size: 34rpx;
+    display: block;
+    margin-top: 20rpx;
+}
+
+.page view {
+    margin-top: 10rpx;
+    font-size: 24rpx;
+    text-align: justify;
+    text-indent: 1.4em;
+}

@@ -1,0 +1,34 @@
+.menu-item {
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu-value {
+    width: 24rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    border-radius: 100%;
+    border: 2rpx solid #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-title,.menu-value {
+    text-align: center;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.menu-title {
+    width: 90rpx;
+    height: 34rpx;
+    line-height: 34rpx;
+}
+
+.menu-img {
+    padding: 10rpx;
+    width: 70rpx;
+    height: 60rpx;
+}

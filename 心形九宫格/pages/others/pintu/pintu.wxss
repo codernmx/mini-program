@@ -1,0 +1,233 @@
+@import "../public.wxss";
+.container {
+    padding: 0;
+}
+
+.main {
+    padding-top: 0rpx;
+    width: 100%;
+}
+
+.img_zone {
+    height: 750rpx;
+    padding-top: 100rpx;
+}
+
+.img_zone .image {
+    width: 560rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img_zone .image image {
+    width: 520rpx;
+    height: 520rpx;
+    display: block;
+    margin: 20rpx auto;
+}
+
+.cropper-wrapper {
+    position: relative;
+}
+
+.img_list {
+    width: 680rpx;
+    height: 680rpx;
+    background: #ffffff;
+    margin: 35rpx auto;
+    position: relative;
+}
+
+.img_list .item {
+    width: 220rpx;
+    height: 220rpx;
+    display: block;
+    float: left;
+    background: #f1f1f1;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.img_list .item:nth-child(3n+3) {
+    margin-right: 0rpx;
+}
+
+.img_list .item .def {
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    margin: 50rpx auto;
+}
+
+.img_list .item .normal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.option_zone {
+    width: 100%;
+    background-image: linear-gradient(to bottom,#ffffff,#f0f0f0);
+}
+
+.title {
+    margin: 0 35rpx 4rpx;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    color: #555;
+}
+
+.options {
+    padding: 16rpx 0 0;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.option {
+    height: 120rpx;
+    width: 120rpx;
+    background: #ffffff;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+    display: inline-block;
+    box-shadow: 4rpx 4rpx 8rpx #ddd;
+    position: relative;
+    text-align: center;
+    margin-bottom: 16rpx;
+}
+
+.active {
+    box-shadow: 4rpx 4rpx 8rpx #888;
+}
+
+.option:first-child {
+    margin-left: 32rpx;
+}
+
+.option:last-child {
+    margin-right: 32rpx;
+}
+
+.tag_icon {
+    width: 80rpx;
+    height: 80rpx;
+    background: #cdcdcd;
+    margin: 20rpx auto;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    background: #ffffff;
+}
+
+.lock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .1;
+    border-radius: 10rpx;
+}
+
+.switch {
+    background: #ffffff;
+    float: right;
+}
+
+.switch text {
+    margin-right: 12rpx;
+    color: #888;
+    font-size: 28rpx;
+}
+
+.wx-switch-input {
+    width: 92rpx!important;
+    height: 47rpx!important;
+}
+
+.wx-switch-input::before {
+    width: 88rpx!important;
+    height: 43rpx!important;
+}
+
+.wx-switch-input::after {
+    width: 52rpx!important;
+    height: 43rpx!important;
+}
+
+.tag_div {
+    width: 240rpx;
+    height: 240rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #ffffff;
+    z-index: 1000;
+    text-align: center;
+}
+
+.min_avatar {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.cropper-buttons {
+    overflow: hidden;
+    padding: 40rpx 0rpx 0;
+    margin: 40rpx;
+}
+
+.btn {
+    background: #fc543c;
+    text-align: center;
+    color: #ffffff;
+    border: 2rpx solid #fc543c;
+}
+
+.upload_btn {
+    background: #ffffff;
+    border: 2rpx solid #fc543c;
+    color: #fc543c;
+}
+
+.hide_canvas {
+    position: fixed;
+    top: -900rpx;
+}
+
+.movable-view {
+    width: 220rpx;
+    height: 220rpx;
+    display: block;
+    float: left;
+    background: #f1f1f1;
+    opacity: .8;
+}
+
+.movable-view .def {
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    margin: 50rpx auto;
+}
+
+.movable-view .normal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img_list .item.touch {
+    opacity: .3;
+}
+
+.img_list .item.touch image {
+    display: none;
+    background: #ffffff;
+}

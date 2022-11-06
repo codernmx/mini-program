@@ -1,0 +1,40 @@
+.center {
+  text-align: center;
+}
+
+.fx14 {
+  font-size: 28rpx;
+}
+.fx13 {
+  font-size: 26rpx;
+}
+
+.gray {
+  color: #c2bfbf;
+}
+.page{
+  padding: 0 30rpx;
+}
+page {
+    background: #F5F5F5;
+}
+
+.top{
+  margin-top: 30rpx;
+}
+.top15{
+    margin-top: 15rpx;
+}
+.red{
+  color: red;
+}
+.fz16{
+  font-size: 32rpx;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom{
+    margin-bottom: 30rpx;
+}
