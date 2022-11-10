@@ -1,0 +1,37 @@
+<view class="cn">
+	<van-tag type="primary">中文</van-tag>
+	<van-field value="{{ cnValue }}" placeholder="请输入" border="{{ false }}" bind:change="cnOnChange" type="textarea" autosize clearable />
+</view>
+<view class="chooseImg">
+	<van-button bindtap="translate" type="primary" size="small">翻译</van-button>
+	<van-button type="primary" size="small" bindtap="openAdVideo">拍照识别</van-button>
+	<!-- <van-button type="primary" size="small" bindtap="chooseImg">拍照识别</van-button> -->
+</view>
+<view class="tips">* 观看完整广告之后可以使用拍照识别功能</view>
+<view class="en">
+	<van-tag type="success" bindtap="changeShow">{{to_lang_text}}
+		<van-icon name="arrow-down" />
+	</van-tag>
+	<view class="to" bindtap="copyEnglish">{{transResultInfo}}</view>
+</view>
+<view bindtap="copyText" class="copyText" wx:if="{{wordList.length>0}}">
+	<van-button type="primary" size="small" custom-style="border-radius:15rpx">复制拍照识别结果</van-button>
+</view>
+<view class="wordList" wx:if="{{wordList.length>0}}">
+	<view wx:for="{{wordList}}" wx:key="index">
+		<text>{{item.src}}</text>
+	</view>
+</view>
+<van-toast id="van-toast" />
+<!-- 加载动画 -->
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+
+<!-- 切换语言 -->
+<van-popup show="{{ show }}" round position="bottom" custom-style="height: 35%" bind:close="onClose">
+	<van-picker columns="{{ columns }}" bind:change="pickerChange" default-index="2" item-height="47" />
+</van-popup>
+
+
+<view class="ad">
+	<ad unit-id="adunit-d8af7fe438fa3894"></ad>
+</view>
