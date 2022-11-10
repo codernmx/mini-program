@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"i-spin": "../../vant-weapp/spin/index"
+	},
+	"navigationBarBackgroundColor": "#FFFFFF",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "翻译工具"
+}
