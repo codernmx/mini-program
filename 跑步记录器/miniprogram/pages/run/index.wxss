@@ -1,0 +1,58 @@
+page {
+	background: #F4F5F6;
+}
+
+.page {
+	padding: 0 30rpx;
+}
+
+.distance {
+	font-size: 150rpx;
+}
+
+.model {
+	background: pink;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 64px;
+	color: #ffffff;
+}
+
+.card {
+	height: 70vh;
+	background: #fff;
+	border-radius: 20rpx;
+	position: relative;
+}
+
+.tj {
+	position: absolute;
+	width: 100%;
+	bottom: 60rpx;
+}
+
+.tj .item {
+	width: 33%;
+	text-align: center;
+}
+
+.btn-box {
+	justify-content: center;
+}
+
+.count {
+	font-weight: bold;
+	font-size: 38rpx;
+}
+
+.btn-box view {
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #24C789;
+	line-height: 150rpx;
+}

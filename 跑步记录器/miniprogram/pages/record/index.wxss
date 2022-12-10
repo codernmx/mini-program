@@ -1,0 +1,52 @@
+page {
+    background: #F6F6F6;
+}
+
+.page {
+    padding: 0 30rpx;
+}
+
+.box {
+    width: 100%;
+    height: 700rpx;
+    padding-top: 30rpx;
+    background: #ffffff;
+    border-radius: 30rpx;
+}
+/* .line{
+    padding: 0 100rpx;
+} */
+
+.title {
+    margin: 0 30rpx;
+    background: linear-gradient(to right, #1E6BDC, #FFFEFF);
+}
+
+
+.itemBox {
+    width: 100%;
+    min-height: 400rpx;
+    padding-top: 30rpx;
+    background: #ffffff;
+    border-radius: 30rpx;
+    padding-bottom: 20rpx;
+}
+
+.item {
+    background: #ECF6FF;
+    width: 92%;
+    margin: 20rpx auto;
+    border-radius: 10rpx;
+    min-height: 120rpx;
+}
+
+.item view {
+    padding: 20rpx;
+}
+.blue{
+    font-size: 40rpx;
+}
+.right{
+    color: #0080FD;
+    font-size: 20rpx;
+}

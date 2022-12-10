@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/run/index",
+        "pages/record/index"
+        
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "跑步记录",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#3e85e9",
+        "list": [{
+                "pagePath": "pages/run/index",
+                "text": "跑步",
+                "iconPath": "/images/cxzs.png",
+                "selectedIconPath": "/images/cxzs_a.png"
+            },
+            {
+                "pagePath": "pages/record/index",
+                "text": "步数",
+                "iconPath": "/images/me.png",
+                "selectedIconPath": "/images/me_a.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取当前位置"
+        }
+    },
+    "requiredPrivateInfos": [
+        "onLocationChange",
+        "startLocationUpdate"
+    ],
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

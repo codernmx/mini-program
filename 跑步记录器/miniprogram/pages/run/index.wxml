@@ -1,0 +1,36 @@
+<view class="page">
+    <view wx:if="{{!showDown}}">
+        <view class="card">
+            <view class="center" style="padding-top: 200rpx;">
+                <text class="distance">{{distance}}</text>
+                <text>km</text>
+            </view>
+
+            <view class="flex tj">
+                <view class="flex-column item">
+                    <view class="count">{{kmH}}</view>
+                    <view>公里/小时</view>
+                </view>
+                <view class="flex-column item">
+                    <view class="count">{{second}}</view>
+                    <view>耗时/秒</view>
+                </view>
+                <view class="flex-column item">
+                    <view class="count">{{calories}}</view>
+                    <view>千卡</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="btn-box flex top">
+            <view bindtap="countDown" wx:if="{{status === ''}}">开始</view>
+            <view bindtap="pause" wx:if="{{status === '执行中'}}">暂停</view>
+            <view bindtap="start" wx:if="{{status === '暂停'}}">继续</view>
+            <view bindtap="stop" wx:if="{{status === '暂停'}}" style="margin-left: 150rpx;background: #F35168;">完成</view>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{showDown}}" class="model">
+    {{countDownNum}}
+</view>

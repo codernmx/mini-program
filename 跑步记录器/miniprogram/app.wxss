@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  margin-top: 30rpx;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-column{
+  flex-direction: column;
+
+}
